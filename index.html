@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./images/apple-touch.png" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/2ba71bd179.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="w-full h-screen bg-gray-200">
+      <div class="flex align-middle justify-center">
+        <h1
+          class="md:m-4 md:text-3xl mx-1 my-4 text-xl font-bold text-gray-700"
+        >
+          What are you planning to do today?
+        </h1>
+        <br />
+      </div>
+
+      <div class="flex align-middle justify-center">
+        <input
+          class="border-2 border-blue-800 h-12 w-3/5 m-4 p-1 pl-3 rounded-md shadow-lg transition ease-in-out focus:scale-110 duration-300"
+          type="text"
+          placeholder="e.g.: Clean Room"
+          id="todo-input"
+        />
+        <button
+          class="h-12 w-16 p-1 m-4 md:ml-8 bg-blue-700 text-white rounded-md font-bold hover:bg-blue-500 transition ease-in-out duration-300 hover:scale-110 active:bg-blue-700"
+          id="add-todo"
+        >
+          Add
+        </button>
+      </div>
+
+      <div class="flex align-middle justify-center">
+        <h1
+          class="font-bold text-xl text-gray-500 m-2 text-center"
+          id="quote"
+        ></h1>
+      </div>
+
+      <div class="flex align-middle justify-center mt-8">
+        <div class="bg-slate-800 w-4/5 rounded-md shadow-lg">
+          <div
+            class="flex justify-center text-xl font-extrabold text-gray-200 my-3"
+          >
+            <h1>TO DO LIST</h1>
+          </div>
+
+          <div id="no-item" style="display: none">
+            <div class="flex align-middle justify-center p-3">
+              <img
+                src="./images/sleep.png"
+                height="50px"
+                width="50px"
+                alt="no item"
+              />
+            </div>
+            <div class="flex align-middle justify-center p-3 text-white">
+              <h1>Nothing to do !</h1>
+            </div>
+          </div>
+
+          <ul class="p-4" id="td-list" style="display: none"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
